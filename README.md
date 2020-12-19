@@ -30,7 +30,7 @@ style.use('correlaid')
 ```
 
 ## Contribute
-The style file is not yet complete and will only work for a subset of all the possible matplotlib and seaborn plots. There may still be lines appearing that may not have been correctly styled yet. Feel free to add more parameters to the file via a pull request or raise an issue for plot types that appear not yet as expected.
+The style file is not yet complete and will only work for a subset of all the possible matplotlib and seaborn plots. There may still be lines and parts of the plot that may not have been correctly styled yet. Feel free to add more parameters to the file via a pull request or raise an issue for plot types that appear not yet as expected.
 
 ## More Information
 The style is only the beginning to better looking matplotlib plots. This post gives some nice ideas how to add better lookings titles and subtiles and a signature bar:
