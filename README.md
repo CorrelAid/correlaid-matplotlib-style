@@ -37,8 +37,10 @@ The the style file can then be used as follows:
 style.use('correlaid')
 ```
 
+Then the following default color cycler is used for plotting:
 ```python
 import seaborn as sns
+import matplotlib.pyplot as plt
 sns.palplot(plt.rcParams['axes.prop_cycle'].by_key()['color'])
 ```
 ![plot](./images/palplot.png)
