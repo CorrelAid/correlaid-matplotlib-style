@@ -28,7 +28,7 @@ The stlye file should be placed in your user folder in the .matplotlib folder (s
 ```
 You may verify that it is detected by using the above `style.available` command.
 
-The style uses the [Google Roboto font](https://fonts.google.com/specimen/Roboto). Make sure it is installed in your system.
+The style uses the [Google Roboto font](https://fonts.google.com/specimen/Roboto). Make sure it is installed in your system. If there is a error message that the font cannot be found (may happen in Jupyer notebook), try deleting the [matplotlib cache directory](https://matplotlib.org/3.1.1/faq/troubleshooting_faq.html#matplotlib-configuration-and-cache-directory-locations).
 
 ## Use
 
