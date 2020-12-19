@@ -2,8 +2,6 @@
 
 This repository aims to provide a [matplotlib style sheet](https://matplotlib.org/3.3.3/tutorials/introductory/customizing.html) following the CorrelAid style guide, possibly useful in the CorrelAid context, i.e. talks, blog posts, and such. 
 
-## Use
-
 Besides the default style, matplotlib comes with several built-in styles that we can use readily. To see a list of the available styles use: 
 
 ```python
@@ -20,11 +18,21 @@ For instance, with the 'ggplot' one can use a style that is similar to the defau
 style.use('ggplot')
 ```
 
-Here, we contribute a CorrelAid theme. The stlye file should be placed in your user folder in the .matplotlib folder (should already exist), in a folder `stylelib`  as follows:
+Here, we contribute a CorrelAid theme.
+
+## Install
+
+The stlye file should be placed in your user folder in the .matplotlib folder (should already exist), in a folder `stylelib`  as follows:
 ```bash
 ~/.matplotlib/stylelib/correlaid.mplstyle
 ```
-You may verify that it is detected by using the above `style.available` command. The the style file can then be used as follows:
+You may verify that it is detected by using the above `style.available` command.
+
+The style uses the [Google Roboto font](https://fonts.google.com/specimen/Roboto). Make sure it is installed in your system.
+
+## Use
+
+The the style file can then be used as follows:
 ```python
 style.use('correlaid')
 ```
