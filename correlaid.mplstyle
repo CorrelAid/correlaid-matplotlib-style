@@ -1,29 +1,35 @@
-#Author: Cameron Davidson-Pilon, replicated styles from FiveThirtyEight.com
-# See https://www.dataorigami.net/blogs/fivethirtyeight-mpl
+# Author: Marcus Voss, voss.marcus@gmail.com, 
 
-lines.linewidth: 4
+## Colors 
+axes.prop_cycle: cycler('color', ["3863a2","f04451","96c342", "c4c4c4", "508994", "3c3c3b"])
+
+## Text 
+svg.fonttype: path
+text.color: 767675
+font.family: Roboto
+font.size: 14.0
+
+## Lines and Axes
+
+lines.linewidth: 2
 lines.solid_capstyle: butt
-
 legend.fancybox: true
-
-# Greens
-# axes.prop_cycle: cycler('color', ["acc940", "bcd259","96c246", "78a972", "6fa080", "508994", "3665a3", "3c61aa", "2d3b5a"])
-axes.prop_cycle: cycler('color', ["3863a2", "96c342", "f04451", "3c3c3b"])
 
 axes.facecolor: white
 axes.labelsize: large
 axes.axisbelow: true
-axes.grid: true
-axes.grid.axis: x
+axes.grid: True
+axes.grid.axis: y
+
 axes.edgecolor: white
 axes.linewidth: 3.0
 axes.titlesize: x-large
-axes.labelcolor: dimgrey # make 75 % correlaid black
+axes.labelcolor: 767675
+
+
 
 patch.edgecolor: white
 patch.linewidth: 0.5
-
-svg.fonttype: path
 
 grid.linestyle: -
 grid.linewidth: 1.0
@@ -31,12 +37,10 @@ grid.color: cbcbcb
 
 xtick.major.size: 0
 xtick.minor.size: 0
-xtick.color: dimgrey  # make 75 % correlaid black
+xtick.color: 767675
 ytick.major.size: 0
 ytick.minor.size: 0
-ytick.color: dimgrey  # make 75 % correlaid black
-
-font.size:14.0
+ytick.color: 767675 
 
 savefig.edgecolor: white
 savefig.facecolor: white
@@ -45,6 +49,3 @@ figure.subplot.left: 0.08
 figure.subplot.right: 0.95
 figure.subplot.bottom: 0.07
 figure.facecolor: white
-
-text.color: dimgrey    # make 75 % correlaid black
-font.family: Roboto
