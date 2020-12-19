@@ -37,6 +37,12 @@ The the style file can then be used as follows:
 style.use('correlaid')
 ```
 
+```python
+import seaborn as sns
+sns.palplot(plt.rcParams['axes.prop_cycle'].by_key()['color'])
+```
+![plot](./images/palplot.png)
+
 ## Contribute
 The style file is not yet complete and will only work for a subset of all the possible matplotlib and seaborn plots. There may still be lines and parts of the plot that may not have been correctly styled yet. Feel free to add more parameters to the file via a pull request or raise an issue for plot types that appear not yet as expected.
 
