@@ -9,27 +9,27 @@ text.color: 767675
 font.family: Roboto
 font.size: 14.0
 
-## Lines and Axes
+## Legend
+legend.fancybox: true
+legend.frameon: False  
 
+## Lines and Axes
 lines.linewidth: 2
 lines.solid_capstyle: butt
-legend.fancybox: true
-
-axes.facecolor: white
+ 
+axes.facecolor: None
 axes.labelsize: large
 axes.axisbelow: true
 axes.grid: True
 axes.grid.axis: y
-
-axes.edgecolor: white
+axes.edgecolor: None
 axes.linewidth: 3.0
 axes.titlesize: x-large
 axes.labelcolor: 767675
 
-
-
 patch.edgecolor: white
 patch.linewidth: 0.5
+patch.force_edgecolor: True
 
 grid.linestyle: -
 grid.linewidth: 1.0
