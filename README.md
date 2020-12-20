@@ -53,7 +53,7 @@ The the style file can then be used as follows:
 style.use('correlaid')
 ```
 
-I not added to the user directory, it can also be placed in the working directory and linked:
+If not added to the user directory, it can also be placed in the working directory and linked:
 ```python
 style.use('correlaid.mplstyle')
 ```
