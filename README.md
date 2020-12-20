@@ -105,7 +105,7 @@ set_correlaid_style(fig, "Tipping Habits of Smokers", "Bill total, in US Dollar"
 ```
 ![plot](./images/correlaid_styled.png)
 
-For more control over the individual parts, see the notebook `Option2 Package.ipynb`.
+For more control over the individual parts, see the notebook `Option2 Install Package.ipynb`.
 
 ## Contribute
 The style file is not yet complete and will only work for a subset of all the possible matplotlib and Seaborn plots. There may still be lines and parts of the plot that may not have been correctly styled yet. Feel free to add more parameters to the file via a pull request or raise an issue for plot types that appear not yet as expected. Of course any feedback on styles, or ideas for improvements are welcome.
