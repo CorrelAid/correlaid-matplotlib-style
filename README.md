@@ -18,7 +18,9 @@ For instance, with the 'ggplot' one can use a style that is similar to the defau
 style.use('ggplot')
 ```
 
-Here, we contribute a CorrelAid theme and helper functions.
+Here, we contribute a CorrelAid theme and helper functions. The package can be used in two different ways:
+- Option 1: One can use the style file as described below on its own to style plots.
+- Option 2: One can install this repository as Python package and use the style and the helper functions.
 
 ## Install
 
@@ -29,6 +31,8 @@ The stlye file should be placed in your user folder in the .matplotlib folder (s
 ~/.matplotlib/stylelib/correlaid.mplstyle
 ```
 You may verify that it is detected by using the above `style.available` command.
+
+Alternatively, you can simply put the file to your working directory and use the absolute path.
 
 ### Option 2 Install the correlaidmatplotlib package
 
@@ -47,6 +51,11 @@ The style uses the [Google Roboto font](https://fonts.google.com/specimen/Roboto
 The the style file can then be used as follows:
 ```python
 style.use('correlaid')
+```
+
+I not added to the user directory, it can also be placed in the working directory and linked:
+```python
+style.use('correlaid.mplstyle')
 ```
 
 Then the following default color cycler is used for plotting:
