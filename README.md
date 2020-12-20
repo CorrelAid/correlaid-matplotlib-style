@@ -83,7 +83,7 @@ ax = sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips)
 ![plot](./images/correlaid.png)
 
 
-### Option 2 Use the help functions
+### Option 2 Use the helper functions
 
 When using the Python package, then one can simply import the package to apply the style, without using `style.use(...)`.
 
