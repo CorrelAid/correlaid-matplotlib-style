@@ -1,4 +1,4 @@
-# CorrelAid matplotlib Style sheet and helper functions
+# CorrelAid matplotlib style sheet and helper functions
 
 This repository provides a [matplotlib style sheet](https://matplotlib.org/3.3.3/tutorials/introductory/customizing.html) following the CorrelAid style guide and some plotting helper functions, possibly useful in the CorrelAid context, i.e. talks, blog posts, and such. It was created in the context of a blog entry.
 
