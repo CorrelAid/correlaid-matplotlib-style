@@ -66,7 +66,7 @@ sns.palplot(plt.rcParams['axes.prop_cycle'].by_key()['color'])
 ```
 ![plot](./images/palplot.png)
 
-So for instance, if in the default style:
+So for instance, a Seaborn plot in the default style looks as follows
 ```python
 import seaborn as sns
 tips = sns.load_dataset("tips")
@@ -74,7 +74,7 @@ ax = sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips)
 ```
 ![plot](./images/regular.png)
 
-Can be changed to the CorrelAid style as follows:
+It can be changed to the CorrelAid style to look as follows:
 ```python
 import matplotlib.style as style
 style.use("correlaid")
