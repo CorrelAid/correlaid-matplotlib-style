@@ -55,7 +55,7 @@ style.use('correlaid')
 
 If not added to the user directory, it can also be placed in the working directory and linked:
 ```python
-style.use('correlaid.mplstyle')
+style.use('./correlaid.mplstyle')
 ```
 
 Then the following default color cycler is used for plotting:
