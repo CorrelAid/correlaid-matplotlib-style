@@ -24,7 +24,15 @@ Here, we contribute a CorrelAid theme and helper functions. The package can be u
 
 ## Install
 
-### Option 1 Use only on the style file
+### Option 1 Install using pip
+
+To install the package simply run
+```bash
+pip install correlaidmatplotlib
+```
+This installs the package locally using pip and installs matplotlib, if not available, as well as numpy and seaborn that are only used for the example notebooks.
+
+### Option 2 Use only on the style file
 
 The stlye file should be placed in your user folder in the .matplotlib folder (should already exist), in a folder `stylelib`  as follows:
 ```bash
@@ -34,9 +42,9 @@ You may verify that it is detected by using the above `style.available` command.
 
 Alternatively, you can simply put the file to your working directory and use the absolute path.
 
-### Option 2 Install the correlaidmatplotlib package
+### Option 3 Manually download and locally install the correlaidmatplotlib package
 
-To install the package, download or checkout this repository. Then in the top level that contains the `setup.py` file, run
+This is similar to option 1, and maybe useful if you want to add changes to the package. Then download or checkout this repository. Then in the top level that contains the `setup.py` file, run
 ```bash
 pip install .
 ```
@@ -83,7 +91,7 @@ ax = sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips)
 ![plot](./images/correlaid.png)
 
 
-### Option 2 Use the helper functions
+### Option 1 and 3 Use the helper functions
 
 When using the Python package, then one can simply import the package to apply the style, without using `style.use(...)`.
 
