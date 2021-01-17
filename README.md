@@ -24,15 +24,7 @@ Here, we contribute a CorrelAid theme and helper functions. The package can be u
 
 ## Install
 
-### Option 1 Install using pip
-
-To install the package simply run
-```bash
-pip install correlaidmatplotlib
-```
-This installs the package locally using pip and installs matplotlib, if not available, as well as numpy and seaborn that are only used for the example notebooks.
-
-### Option 2 Use only on the style file
+### Option 1 Using only on the style file
 
 The stlye file should be placed in your user folder in the .matplotlib folder (should already exist), in a folder `stylelib`  as follows:
 ```bash
@@ -42,6 +34,14 @@ You may verify that it is detected by using the above `style.available` command.
 
 Alternatively, you can simply put the file to your working directory and use the absolute path.
 
+### Option 2 Install using pip
+
+To install the package simply run
+```bash
+pip install correlaidmatplotlib
+```
+This installs the package locally using pip and installs matplotlib, if not available, as well as numpy and seaborn that are only used for the example notebooks.
+
 ### Option 3 Manually download and locally install the correlaidmatplotlib package
 
 This is similar to option 1, and maybe useful if you want to add changes to the package. Then download or checkout this repository. Then in the top level that contains the `setup.py` file, run
@@ -50,12 +50,12 @@ pip install .
 ```
 This installs the package locally using pip and installs matplotli, if not available, as well as numpy and seaborn that are only used for the example notebooks.
 
-### For both options
+### For all three options
 The style uses the [Google Roboto font](https://fonts.google.com/specimen/Roboto). Make sure it is installed in your system. If there is a error message that the font cannot be found (may happen in Jupyer notebook), try deleting the [matplotlib cache directory](https://matplotlib.org/3.1.1/faq/troubleshooting_faq.html#matplotlib-configuration-and-cache-directory-locations).
 
 ## Use
 
-### Option 1 Use only the style file
+### Option 1 Using only the style file
 The the style file can then be used as follows:
 ```python
 style.use('correlaid')
@@ -91,13 +91,15 @@ ax = sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips)
 ![plot](./images/correlaid.png)
 
 
-### Option 1 and 3 Use the helper functions
+### Options 2 and 3 Useing the package and the helper functions
 
-When using the Python package, then one can simply import the package to apply the style, without using `style.use(...)`.
+When using the Python package, then one can simply import the package to apply the style, without using `style.use('correlaid')`.
 
 ```python
 import correlaidmatplotlib
 ```
+*Note:*: the import should be after importing `matplotlib` and `seaborn`. Otherwise and explicit `style.use('correlaid')` (see Option 1), should be inserted after all the imports and other style uses, to make sure the font sizes are correct.
+
 While the default Seaborn plots are quite powerful and the style already improves some defaults, there is still room for improvement. With the CorrelAid package we provide helper functions to further style the plots consistently, i.e., we:
 - add Title and subtitle,
 - add a signature bar adding a Copyright and data source,
