@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="correlaidmatplotlib",
-    version="0.1.2",
+    version="0.1.3",
     author="Marcus Voss",
     author_email="voss.marcus@gmail.com",
     description="A matplotlib style sheet following the CorrelAid style guide",
